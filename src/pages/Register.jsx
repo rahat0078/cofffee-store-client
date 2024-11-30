@@ -3,6 +3,7 @@ import { FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import Swal from "sweetalert2";
+import login from '../assets/more/9.png'
 
 const Register = () => {
 
@@ -25,7 +26,7 @@ const Register = () => {
                 // save to database 
 
                 const createdAt = result?.user?.metadata?.creationTime;
-                
+
                 const newUser = { name, email, createdAt }
 
 
@@ -59,7 +60,7 @@ const Register = () => {
     }
 
     return (
-        <div className="py-16 flex justify-center items-center bg-login">
+        <div className="py-16 flex justify-center items-center" style={{backgroundImage: `url(${login})`}}>
             <div className="card w-full max-w-lg  shrink-0 shadow-2xl border my-12">
                 <h3 className="text-center mt-6 text-4xl font-semibold text-[#E3B577]">Register Now !</h3>
                 <form onSubmit={handleRegister} className="card-body">

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/more/logo1.png';
+import banner from '../assets/more/15.jpg' 
 
 const Header = () => {
     const links = <>
@@ -17,7 +18,7 @@ const Header = () => {
         }>Users</NavLink></li>
     </>
     return (
-        <div className="bg-header text-white">
+        <div className="text-white" style={{backgroundImage: `url(${banner})`}}>
             <div className='navbar justify-between container mx-auto'>
                 <div className="py-2">
                     <img src={logo} alt="" className='w-[65px]' />

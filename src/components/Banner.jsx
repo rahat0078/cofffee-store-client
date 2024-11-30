@@ -2,11 +2,12 @@ import icon1 from '../assets/icons/1.png';
 import icon2 from '../assets/icons/2.png';
 import icon3 from '../assets/icons/3.png';
 import icon4 from '../assets/icons/4.png';
+import banner from '../assets/more/3.png';
 
 const Banner = () => {
     return (
         <div>
-            <div className="bg-banner bg-center bg-no-repeat bg-cover text-white flex justify-between">
+            <div className='bg-center bg-no-repeat bg-cover text-white flex justify-between' style={{backgroundImage: `url(${banner})`}}>
                 <div></div>
                 <div className="py-[196px]">
                     <h2 className="text-5xl font-normal">Would you like a Cup of Delicious Coffee?</h2>

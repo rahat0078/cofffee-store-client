@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
+import login from '../assets/more/9.png'
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false)
@@ -40,7 +41,7 @@ const Login = () => {
     }
 
     return (
-        <div className="py-16 flex justify-center items-center bg-login">
+        <div className="py-16 flex justify-center items-center" style={{backgroundImage: `url(${login})`}}>
             <div className="card w-full max-w-lg  shrink-0 shadow-2xl border my-12">
                 <h3 className="text-center mt-6 text-4xl font-bold text-[#E3B577]">Login</h3>
                 <form onSubmit={handleSignIn} className="card-body">

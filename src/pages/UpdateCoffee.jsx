@@ -1,6 +1,7 @@
 import { FaArrowLeft } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import addCoffee from "../assets/more/11.png"
 
 const UpdateCoffee = () => {
     const coffee = useLoaderData()
@@ -47,7 +48,7 @@ const UpdateCoffee = () => {
 
 
     return (
-        <div className="bg-addCoffee bg-no-repeat bg-center bg-cover min-h-[calc(100vh-335px)] flex flex-col items-center justify-center">
+        <div style={{backgroundImage: `url(${addCoffee})`}} className=" bg-no-repeat bg-center bg-cover min-h-[calc(100vh-335px)] flex flex-col items-center justify-center">
             <div className="w-3/4 mx-auto my-[50px]"><button className="btn bg-transparent hover:bg-[#F4F3F0]"> <Link to="/" className="flex items-center gap-2"><FaArrowLeft></FaArrowLeft> Back To Home</Link></button></div>
             <div className="bg-[#F4F3F0] w-3/4 mx-auto text-center mb-[120px] rounded-lg">
                 <div>

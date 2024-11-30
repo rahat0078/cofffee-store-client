@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { FaCartArrowDown, FaEdit, FaEye, FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import coffeebg from '../assets/more/1.png';
 
 const CoffeeCards = ({ coffees, setCoffees }) => {
 
@@ -39,11 +40,11 @@ const CoffeeCards = ({ coffees, setCoffees }) => {
 
 
     return (
-        <div className="bg-cards4 bg-no-repeat bg-auto bg-left-top my-[120px] text-center">
+        <div className=" my-[120px] text-center" style={{backgroundImage: `url(${coffeebg})`}}>
             <p className="text-xl">--- Sip & Savor ---</p>
             <h2 className="text-5xl text-[#331A15] font-semibold my-6">Our Popular Products</h2>
             <Link to="/add_coffee" className="btn bg-[#E3B577] text-white hover:text-black text-xl font-normal">Add Coffee <FaCartArrowDown></FaCartArrowDown></Link>
-            <div className="bg-cards5 bg-no-repeat bg-auto bg-right-bottom my-12">
+            <div className="my-12">
                 <div className="w-3/4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {
                         coffees.map(coffee =>

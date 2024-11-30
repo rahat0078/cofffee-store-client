@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import login from '../assets/more/9.png'
 
 const Users = () => {
 
@@ -42,7 +43,7 @@ const Users = () => {
 
 
     return (
-        <div className=" container mx-auto min-h-[calc(100vh-300px)] flex justify-center items-center bg-login">
+        <div className=" container mx-auto min-h-[calc(100vh-300px)] flex justify-center items-center" style={{backgroundImage: `url(${login})`}}>
             <div className="overflow-x-auto w-full">
                 <table className="table">
                     {/* head */}
